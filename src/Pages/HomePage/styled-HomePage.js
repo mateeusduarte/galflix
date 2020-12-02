@@ -14,7 +14,7 @@ export const InputContainer = styled.nav`
   margin-left: 2vw;
   input {
     width: 80vw;
-    height: 3vh;
+    height: 4vh;
     border: none;
     border-radius: 5px;
     border-radius: 5px;
@@ -24,7 +24,7 @@ export const InputContainer = styled.nav`
     }
   }
   img {
-    height: 3vh;
+    height: 4vh;
     margin-right: 2vw;
     cursor: pointer;
   }

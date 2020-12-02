@@ -1,7 +1,7 @@
-import { Switch, Route, BrowserRouter } from 'react-router-dom';
-import { HomePage } from '../Pages/HomePage/HomePage';
-import { MoviePage } from '../Pages/MoviePage/MoviePage';
-import React from 'react';
+import { Switch, Route, BrowserRouter } from "react-router-dom";
+import { HomePage } from "../Pages/HomePage/HomePage";
+import { MoviePage } from "../Pages/MoviePage/MoviePage";
+import React from "react";
 export function Router() {
   return (
     <BrowserRouter>

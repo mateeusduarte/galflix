@@ -8,9 +8,9 @@ For development, you will only need Node.js installed on your environement. And 
 
 
 ## Install
-
+fork this repository to your profile and then on the repo run the following commands
 ```bash
-$ git clone https://github.com/ORG/PROJECT.git
+$ git clone "your repo url"
 $ cd PROJECT
 $ npm install
 ```

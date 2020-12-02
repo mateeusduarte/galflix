@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import breakpoint from '../../Constants/breakpoints'
 export const HomeContainer = styled.div`
   height: 100vh;
   align-items: center;
@@ -8,6 +8,10 @@ export const HomeContainer = styled.div`
   }
 `;
 export const InputContainer = styled.nav`
+@media only screen and ${breakpoint.device.cel}{
+      margin-right: 5vw;
+
+  }
   display: flex;
   margin: 3vh 0 -3vh 2vw;
   align-items: center;
@@ -35,6 +39,7 @@ export const EmptySearchContainer = styled.div`
   margin: auto;
   margin-top: 30vh;
   align-items: center;
+  
 
   img {
     width: 20vw;
@@ -55,6 +60,10 @@ export const EmptySearchContainer = styled.div`
   }
 `;
 export const FlexMovies = styled.main`
+  @media only screen and ${breakpoint.device.cel}{
+    flex-direction: column;
+    width: 100%;
+    }
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

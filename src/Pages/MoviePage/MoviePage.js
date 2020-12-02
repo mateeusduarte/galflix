@@ -3,7 +3,6 @@ import {
   FlexContent,
   FlexDateTime,
   FlexRate,
-  InfoContainer,
   MoviePageContainer,
   PlotContainer,
   TitleContainer,
@@ -14,6 +13,7 @@ import { useContext, useEffect } from "react";
 import GlobalStateContext from "../../Global/GlobalStateContext";
 import goBackIcon from "../../Assets/goBackIcon.svg";
 import { goBack } from "../../Router/Coordinator";
+
 
 export function MoviePage() {
   const history = useHistory();

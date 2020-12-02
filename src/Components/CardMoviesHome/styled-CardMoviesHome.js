@@ -1,6 +1,12 @@
 import styled from "styled-components";
-
+import breakpoint from '../../Constants/breakpoints'
 export const CardContainer = styled.div`
+@media only screen and ${breakpoint.device.cel}{
+    flex-direction: column;
+    width: 35vw;
+    margin:auto;
+    margin-top:3vh;
+    }
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -49,7 +55,7 @@ export const CardContainer = styled.div`
     &::after {
       content: "";
       background-image: url(${(props) => props.poster});
-      height: 25vh;
+      height: 30vh;
       position: absolute;
       top: 0px;
       right: 0px;
@@ -65,3 +71,7 @@ export const CardContainer = styled.div`
     }
   }
 `;
+
+
+
+

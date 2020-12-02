@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import breakpoint from '../../Constants/breakpoints'
 
 export const MoviePageContainer = styled.div`
   color: white;
@@ -8,20 +9,28 @@ export const MoviePageContainer = styled.div`
   height: 100vh;
 
   img {
+    @media only screen and ${breakpoint.device.cel}{
+    width:40vw;
+    height:40vh;
+  }
     width: 30vw;
     height: 70vh;
   }
 `;
 
 export const FlexContent = styled.main`
+@media only screen and ${breakpoint.device.cel}{
+    margin-top:35vh;
+  }
   display: flex;
   flex-direction: column;
+ 
   width: 40vw;
 `;
 export const BackIcon = styled.div`
   img {
     height: 3vh;
-    width: 1.5vw;
+    width: 5vw;
     cursor: pointer;
   }
 `;
@@ -39,13 +48,23 @@ export const FlexDateTime = styled.div`
 `;
 
 export const TitleContainer = styled.div`
+@media only screen and ${breakpoint.device.cel}{
+    font-size:1em;
+    width:25vw;
+  }
   display: flex;
   flex-wrap: wrap;
   width: 35vw;
   font-size: 1.5em;
 `;
 export const FlexRate = styled.div`
+@media only screen and ${breakpoint.device.cel}{
+    flex-direction:column;
+    align-items: flex-start;
+
+  }
   display: flex;
+  
   align-items: center;
   img {
     height: 3vh;
@@ -67,10 +86,16 @@ export const FlexRate = styled.div`
     height: 3vh;
     margin-right: 2vw;
     width: 8vw;
+    @media only screen and ${breakpoint.device.cel}{
+    width:20vw;
+    margin-bottom:2vh;
+
+  }
   }
 `;
 
 export const FlexCastGenreDirector = styled.div`
+
   display: flex;
   width: 100%;
   p {
@@ -85,6 +110,10 @@ export const FlexCastGenreDirector = styled.div`
   div {
     width: 11vw;
     margin-right: 1vw;
+    @media only screen and ${breakpoint.device.cel}{
+      margin-right: 12vw;
+
+  }
   }
 `;
 
